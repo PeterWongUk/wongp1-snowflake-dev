@@ -16,6 +16,10 @@ terraform {
 }
 
 provider "snowflake" {
+    username = "wongp1"
+    account  = "jv47342"
+    region   = "eu-west-2.aws"
+    role     = "AccountAdmin"
 }
 
 resource "snowflake_database" "demo_db" {
