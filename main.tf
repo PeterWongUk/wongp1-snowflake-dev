@@ -16,7 +16,7 @@ terraform {
 }
 
 provider "snowflake" {
-
+    account_name      = "jv47342"
 }
 
 resource "snowflake_database" "demo_db" {
