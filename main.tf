@@ -16,10 +16,7 @@ terraform {
 }
 
 provider "snowflake" {
-  organization_name = "peterWongSurrey"
-  account_name      = "jv47342"
 
-  role              = "ACCOUNTADMIN"
 }
 
 resource "snowflake_database" "demo_db" {
