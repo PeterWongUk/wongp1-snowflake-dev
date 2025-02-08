@@ -16,6 +16,11 @@ terraform {
 }
 
 provider "snowflake" {
+        username = "..."
+  account  = "..."
+  region   = "eu-west-2.aws"
+    role     = "..."
+
 }
 
 resource "snowflake_database" "demo_db" {
