@@ -1,8 +1,8 @@
 terraform {
   required_providers {
     snowflake = {
-      source  = "chanzuckerberg/snowflake"
-      version = "0.25.17"
+      source  = "Snowflake-Labs/snowflake"
+      version = ">= 1.0.0"
     }
   }
 
@@ -16,11 +16,10 @@ terraform {
 }
 
 provider "snowflake" {
-        username = "..."
-  account  = "..."
-  region   = "eu-west-2.aws"
-    role     = "..."
+  organization_name = "peterWongSurrey"
+  account_name      = "jv47342"
 
+  role              = "ACCOUNTADMIN"
 }
 
 resource "snowflake_database" "demo_db" {
