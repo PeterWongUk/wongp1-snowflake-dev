@@ -7,7 +7,7 @@ terraform {
   }
 
   backend "remote" {
-    organization = "peterWongSurrey"
+    organization = "PeterWongSurrey"
 
     workspaces {
       name = "gh-actions"
@@ -16,6 +16,7 @@ terraform {
 }
 
 provider "snowflake" {
+
 }
 
 resource "snowflake_database" "demo_db" {
